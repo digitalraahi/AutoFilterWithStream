@@ -107,13 +107,13 @@ if 'DYNO' in environ:
     ON_HEROKU = True
     APP_NAME = str(getenv('APP_NAME'))
 
-else:
-    ON_HEROKU = False
+  ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://movieflix-admin-ca082bca7f52.herokuapp.com/".format(FQDN)
+    URL = "https://{}/".format(FQDN)
 else:
-    URL = "https://movieflix-admin-ca082bca7f52.herokuapp.com/".format(FQDN)
+    URL = "http://{}/".format(FQDN)
+REPO_OWNER = "MovieFlix"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
