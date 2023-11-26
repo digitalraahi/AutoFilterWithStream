@@ -23,7 +23,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('Support', url=f'https://t.me/MovieFlix_admin')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -39,7 +39,7 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('Rᴜʟᴇs', url="https://telegra.ph/How-to-get-movies--series-from-Bot-10-14-2"),
-                    InlineKeyboardButton('Hᴏᴡ Tᴏ Usᴇ Mᴇ', url="https://t.me/+CRxXz6AAWTQ4ZWFl")
+                    InlineKeyboardButton('Hᴏᴡ Tᴏ Usᴇ Mᴇ', url="https://t.me/MovieFlix_Search")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         d = await message.reply_text(
@@ -64,7 +64,7 @@ async def save_group(bot, message):
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('Rᴜʟᴇs', url="https://telegra.ph/How-to-get-movies--series-from-Bot-10-14-2"),
-                                                                           InlineKeyboardButton('Hᴏᴡ Tᴏ Usᴇ Mᴇ', url="https://t.me/+CRxXz6AAWTQ4ZWFl")
+                                                                           InlineKeyboardButton('Hᴏᴡ Tᴏ Usᴇ Mᴇ', url="https://t.me/MovieFlix_Search")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
